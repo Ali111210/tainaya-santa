@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('snow\ backround.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #771414;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header:hover{
+    background-color: #0e3f08;
+    transition-duration: 1.1s;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #ffe135;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes snowflakes {
+    0% { top: -10%; }
+    100% { top: 110%; }
+}
+
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: snowflakes 10s linear infinite;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img{
+    border-radius: 12px;
+    
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+    animation: popUp 0.5s ease-in-out;
+    cursor: pointer;
+    width: 200px;
+}
+
+.card h2 {
+    color: #042446;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.buy-button{
+    background-color: #770505;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buy-button:hover{
+    scale: 1.1;
+    transition-duration: 1.2s;
+    background-color: darkgreen;
+}
+
+.href{
+    color: rgb(225, 231, 225);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайный Санта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Тайный Санта 2024</h1>
+        <nav class="nav">
+            <ul>
+                <li><a class="a" href="index.html">Регистрация</a></li>
+                <li><a class="a" href="podarka.html">Подаркалар</a></li>
+                <li><a class="a" href="film.html">Жаңа жылдық фильмдер</a></li>
+            </ul>
+        </nav>
+        <div class="snowflakes">
+            <div class="snowflake"></div>
+            <div class="snowflake"></div>
+            <div class="snowflake"></div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section id="register">
+            <h2>Регистрация участников</h2>
+            <form id="registrationForm">
+                <input type="text" id="nickname" placeholder="Введите ваш ник" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <div id="participants"></div>
+            <button id="drawButton" onclick="startDraw()" disabled>Начать жеребьевку</button>
+            <div id="result"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="button">
+            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
